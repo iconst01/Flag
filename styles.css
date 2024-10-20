@@ -1,0 +1,90 @@
+body{
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    padding-bottom: 20%;
+    
+}
+
+.flag{
+    width: 60%;
+    height: 30%;
+    position: relative;
+
+}
+.topred,.topwhite,.bottomred,.bottomwhite{
+    width: 100%;
+    height: 15%;
+    border: 1px solid black;
+}
+.topred{
+    background-color: red;
+    height: 14.28%;
+}
+
+.topwhite{
+    background-color: white;
+    height: 14.28%;
+}
+
+.bottomred{
+    background-color: red;
+    height: 14.28;
+}
+
+.bottomwhite{
+    background-color: white;
+    height: 14.28%;
+}
+img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+}
+
+/*media queries*/
+
+/*desktop*/
+
+@media( min-width: 1486px) and (max-width: 1096px){
+    .flag{
+        width: 50%;
+        height: 40%;
+    }
+}
+
+/*tablet */
+
+@media( min-width: 1024px) and (max-width: 1366px){
+    .flag{
+        width: 70%;
+        height: 35%;
+    }
+}
+
+/*mobile*/
+
+@media(max-width: 932px){
+    .flag{
+        width: 80%;
+        height: 30%;
+    }
+    img {
+        width: 60%;
+    }
+}
+
+
+@media(max-width: 320px){
+    img{
+        width: 30%;
+        height: 30%;
+    }
+
+    .bottomred,.bottomwhite,.topred,.topwhite{
+        width: 70%;
+        height: 3%;
+    }
+}
